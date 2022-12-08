@@ -177,7 +177,7 @@ public:
      * @param end_of_packets An iterator to PacketList::packets.end()
      */
 
-    void send_alarm_email(Packet_it_t first_packet, Packet_it_t end_of_packets) {
+    void send_alarm_emails(Packet_it_t first_packet, Packet_it_t end_of_packets) {
         Serial.println("Looking for alarms that need an email sent");
         ui_->update_status_line("Look for old alarms", 2);
         bool email_attempted = false;

@@ -101,7 +101,7 @@ void loop() {
   if (alarm_email_timer > alarm_email_delay) {
     Packet_it_t it_begin = packet_list->get_packets_begin();
     Packet_it_t it_end = packet_list->get_packets_end();
-    net->send_alarm_email(it_begin, it_end);
+    net->send_alarm_emails(it_begin, it_end);
     alarm_email_timer = 0;
   }
 
