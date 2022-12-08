@@ -28,13 +28,13 @@ private:
 
     /**
      * @brief The function that will ultimately be run as a Task,
-     * every minute. (But only after being called in start_task_impl(), below.)
+     * every 10 seconds. (But only after being called in start_task_impl(), below.)
      */
     
     void handle_influx_queue_task() {
         while (1) {
             this->handle_influx_queue();
-            vTaskDelay(60000 / portTICK_RATE_MS);
+            vTaskDelay(10000 / portTICK_RATE_MS);
         }
     }
 

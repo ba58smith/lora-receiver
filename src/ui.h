@@ -236,7 +236,7 @@ public:
            timeinfo = *tm_to_convert;
        }
        char time_buf[21];
-       strftime(time_buf, sizeof(time_buf), "%b %d: %I:%M:%S %P", &timeinfo);
+       strftime(time_buf, sizeof(time_buf), "%b %d, %I:%M:%S%P", &timeinfo);
        String current_time_string = time_buf;
        return current_time_string;
     }
