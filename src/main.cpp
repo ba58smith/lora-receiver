@@ -23,7 +23,7 @@ uint8_t buzzer_pin = 4;
 uint64_t wifi_check_delay = 30000; // every 30 seconds
 uint64_t bme280_update_delay = 600000; // every 10:00
 bool first_run = true;
-uint64_t packet_display_interval = 3500; // every 3.5 seconds
+uint64_t packet_display_interval = 3000; // every 3.0 seconds
 uint64_t alarm_email_delay = 300000;   // every 5:00
 uint64_t sys_time_display_delay = 30000; // every 30 seconds
 
