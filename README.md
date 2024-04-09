@@ -10,3 +10,5 @@ Version 2.0 (1 May, 2022) of the receiver is completely generic in the receipt, 
 Here's the receiver "under the hood", with the BME280 temp, pressure, and humidity sensor on the end of the 4-wire cable.
 
 Here's a link to a YouTube video showing what it looks like from startup until at least one of everything has happened: https://youtu.be/leSu7Hqs5D0
+
+UPDATE: I replaced the small OLED with a larger one, and made a lot of code changes to use the additional space. That project (where all future modifications will be made) is here: https://github.com/ba58smith/battery-monitor
